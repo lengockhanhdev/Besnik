@@ -385,7 +385,6 @@ a {
     height: 460px;
     border-radius: 12px;
     object-fit: cover;
-    object-position: left;
 }
 
 .resources .stat {
