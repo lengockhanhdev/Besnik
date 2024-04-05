@@ -58,7 +58,7 @@ a {
 }
 
 .btn:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .line-clamp {
@@ -193,6 +193,7 @@ a {
     height: 90px;
     padding: 0 42px;
     border-radius: 12px;
+    transition: 0.25s;
 }
 
 .services .brand a:hover {
@@ -310,14 +311,28 @@ a {
     flex: 1;
     background: #fff;
     border-radius: 12px;
+    border: 1px solid #e2dfda;
+    overflow: hidden;
+    transition: 0.25s;
 }
 
-.featured .image {
-    width: 100%;
+.featured .item:hover {
+    border-color: transparent;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.featured .item:hover .featured__img {
+    transform: scale(1.05);
+}
+
+.featured__img {
+    margin: -1px;
+    width: calc(100% + 2px);
     height: 227px;
     object-fit: cover;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
+    transition: 0.25s;
 }
 
 .featured .body {
@@ -581,6 +596,10 @@ a {
     white-space: nowrap;
 }
 
+.footer .item a:hover {
+    text-decoration: underline;
+}
+
 .footer .desc {
     width: 257px;
     line-height: 1.75;
@@ -602,5 +621,3 @@ a {
     font-size: 1.4rem;
     color: #c2c2c2;
 }
-
-/* ========== Common ========== */
