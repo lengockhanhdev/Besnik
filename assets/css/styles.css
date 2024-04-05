@@ -325,10 +325,15 @@ a {
     transform: scale(1.05);
 }
 
+.featured__thumb {
+    height: 227px;
+    overflow: hidden;
+}
+
 .featured__img {
     margin: -1px;
     width: calc(100% + 2px);
-    height: 227px;
+    height: 100%;
     object-fit: cover;
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
@@ -337,6 +342,7 @@ a {
 
 .featured .body {
     padding: 17px 20px 22px;
+    transition: 0.25s;
 }
 
 .featured .sub-title a {
